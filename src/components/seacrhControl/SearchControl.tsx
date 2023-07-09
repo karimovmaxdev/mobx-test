@@ -4,17 +4,16 @@ import SearchInput from "./SearchInput";
 import HelpList from "./HelpList";
 
 //types 
-import IViewModelControl from '../../store/searchControl/viewModel'
+import {IViewModelSearchControl} from '../../store/searchControl/viewModel'
 
 
 interface ISearch {
     length: number,
-    store: IViewModelControl,
+    store: IViewModelSearchControl,
 }
 
 
 function SearchControl({length, store}: ISearch) {
-  
   const countries = useMemo(() => store.helpValues.slice(0, length), [store.helpValues, length])
 
   return (

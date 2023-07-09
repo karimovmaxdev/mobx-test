@@ -5,14 +5,14 @@ import { observer } from "mobx-react-lite";
 import Button from "./Button";
 import Input from "./Input";
 
-import IViewModelControl from '../../store/textControl/viewModel';
+import {IViewModelTextControl} from '../../store/textControl/viewModel';
 
 import { buttonConfig } from "../../options";
 
 
 interface ITextProps {
     options: buttonConfig[],
-    store: IViewModelControl,
+    store: IViewModelTextControl,
 }
 
 function Wrapper({store, options}:ITextProps) {

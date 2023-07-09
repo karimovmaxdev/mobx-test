@@ -3,14 +3,15 @@ import {Model} from "./model";
 
 import { CountryInfo } from "../../api/apiService";
 
-interface IViewModelControl {
+export interface IViewModelSearchControl {
     model: Model,
     value: string,
     helpValues: CountryInfo[],
-    loading: boolean
+    loading: boolean,
+    addText(s:string): void
 }
 
-class Control implements IViewModelControl  {
+class Control implements IViewModelSearchControl  {
     model = new Model()
     
     constructor() {

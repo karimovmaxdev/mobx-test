@@ -2,7 +2,7 @@ import { makeAutoObservable } from "mobx";
 import {Model} from "./model";
 // import model from "./model";
 
-interface IViewModelTextControl {
+export interface IViewModelTextControl {
     model: Model,
     value: string,
     defaultValue: string,

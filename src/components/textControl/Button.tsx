@@ -6,6 +6,7 @@ interface IBtnProps {
 }
 
 function Button({text, callback}:IBtnProps) {
+  
   return (
     <>
       <button onClick={() => callback()}>{text}</button>
