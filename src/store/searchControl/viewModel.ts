@@ -8,7 +8,8 @@ export interface IViewModelSearchControl {
     value: string,
     helpValues: CountryInfo[],
     loading: boolean,
-    addText(s:string): void
+    addText(s:string): void,
+    fetchCountries(s:string): void
 }
 
 class Control implements IViewModelSearchControl  {
