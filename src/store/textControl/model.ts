@@ -27,7 +27,3 @@ export class Model implements IModelTextControl {
         return this._defaultValue
     }
 }
-
-const model = new Model();
-
-export default model

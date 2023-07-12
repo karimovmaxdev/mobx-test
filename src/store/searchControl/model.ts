@@ -83,9 +83,3 @@ export class Model implements IModelSearchControl {
         }, 500);
     }
 }
-
-
-const model = new Model();
-
-
-export default model
